@@ -28,7 +28,6 @@ internal class Program
 
         Console.WriteLine("Choose an operation:");
         Console.WriteLine("1. Addition \n2. Subtraction \n3. Multiplication \n4. Division");
-
         Console.Write("Enter the operation number (1-4): ");
 
             
