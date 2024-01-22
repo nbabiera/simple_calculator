@@ -72,5 +72,7 @@ internal class Program
 
         Console.WriteLine("Result of " + optVal + ": " + res.ToString());
 
+        Main(null);
+
     }
 }
