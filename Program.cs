@@ -53,6 +53,16 @@ internal class Program
                 optVal = "Multiplication";
                 break;
             case 4:
+                while(sNum == 0)
+                {
+                    Console.WriteLine("Divisor cannot be equal to 0");
+                    Console.Write("Please enter a NUMBER: ");
+
+                    while (!double.TryParse(Console.ReadLine(), out sNum))
+                    {
+                        Console.Write("This is not valid input. Please enter a NUMBER: ");
+                    }
+                }
                 res = fNum / sNum;
                 optVal = "Division";
                 break;
