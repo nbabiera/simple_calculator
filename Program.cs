@@ -30,9 +30,10 @@ internal class Program
         Console.WriteLine("1. Addition \n2. Subtraction \n3. Multiplication \n4. Division");
         Console.Write("Enter the operation number (1-4): ");
 
-            
-        while(!int.TryParse(Console.ReadLine(), out opt))
+    
+        while (!int.TryParse(Console.ReadLine(), out opt))
         {
+          
             Console.WriteLine("Choose a number only: ");
             Console.WriteLine("1. Addition \n2. Subtraction \n3. Multiplication \n4. Division");
             Console.Write("Enter the operation number (1-4): ");
@@ -67,8 +68,10 @@ internal class Program
                 optVal = "Division";
                 break;
             default:
+                Console.WriteLine("Operation out of range");
                 break;
         }
+
 
         Console.WriteLine("Result of " + optVal + ": " + res.ToString());
 
